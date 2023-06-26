@@ -70,10 +70,10 @@ header{
     font-size: xx-large;
     margin-left: 10px;
 }
-.sticky{
+/* .sticky{
     position: sticky;
     top: 0;
-}
+} */
 
 .logo{
     position: absolute;
@@ -156,6 +156,7 @@ a:hover{
     color: black;
     font-family: 'Cedarville Cursive', cursive;
 }
+
 /* Screen Response */
 @media ( width <= 600px) {
     .logo{
