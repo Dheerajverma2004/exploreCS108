@@ -1,295 +1,320 @@
-@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
 }
-.calender-box{
+.calender-box {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: top;
+  justify-content: left;
+}
+.calender {
+  width: 300px;
+  height: 250px;
+  background: #fff;
+  display: flex;
+  align-items: top;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.left,
+.right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  flex-direction: column;
+}
+
+.left p,
+.right p {
+  font-family: "Comforter", cursive;
+}
+
+.left {
+  width: 50%;
+  background: #fff;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.right {
+  width: 50%;
+  background: #a5d7e8;
+  color: #fff;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  color: violet;
+}
+#date {
+  font-size: 100px;
+  line-height: 90px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #84a7a1;
+  z-index: 10;
+}
+
+.main {
+  font-family: "Cairo Play", sans-serif;
+  font-size: xx-large;
+  margin-left: 10px;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  filter: drop-shadow(5px 5px 10px #000);
+}
+nav {
+  margin: 10px;
+  background: #fff;
+  border-radius: 50px;
+  padding: 10px;
+}
+nav ul li {
+  list-style: none;
+  padding: 0px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #777;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  transition: color 0.5s;
+}
+
+nav ul li::after {
+  content: "";
+  background: #1f6e8c;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0;
+  transition: top 0.5s, opacity 0.5s;
+}
+
+nav ul li:hover::after {
+  top: 50%;
+  opacity: 1;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+.container {
+  background-color: #1f6e8c;
+  z-index: 5;
+}
+.slide {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.tools {
+  color: #000;
+  font-family: "Gasoek One", sans-serif;
+  font-weight: 10;
+  margin-left: 10px;
+}
+.four {
+  margin-right: 15px;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: black;
+  font-family: "Cedarville Cursive", cursive;
+}
+
+.abt-sec {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.images {
+  width: 45%;
+  height: 80%;
+  position: absolute;
+  left: 100px;
+}
+.images img {
+  position: fixed;
+  left: 30%;
+  transform: translateX(-50%);
+  transition: right 1s, left 1s;
+}
+.india-map {
+  height: 100%;
+}
+.my-img {
+  height: 80%;
+  top: 100px;
+}
+.images:hover .my-img {
+  left: 25%;
+}
+.welcome {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  width: 50%;
+  transform: translate(100%, 30%);
+}
+h1 #first-name {
+  font-weight: 10;
+  color: chartreuse;
+  font-family: "Gasoek One", sans-serif;
+}
+h1 #last-name {
+  font-family: "Comforter", cursive;
+  color: #fff;
+}
+h1 #Hi {
+  color: #fff;
+}
+h1 #comma {
+  color: brown;
+}
+p[draggable="juet"] {
+  color: #fff;
+  font-style: italic;
+  line-height: 1.6;
+  font-family: "Comforter", cursive;
+}
+p[draggable="Montserrat"] {
+  font-family: "Montserrat", cursive;
+  text-align: center;
+  line-height: 1.6;
+  font-style: normal;
+}
+
+/* Screen Response */
+@media (width <= 600px) {
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.3);
+    filter: drop-shadow(5px 5px 10px #000);
+  }
+  .calender-box {
     width: 100%;
     height: 80vh;
     display: flex;
     align-items: top;
     justify-content: left;
-}
-.calender{
-    width: 300px;
-    height: 250px;
+  }
+  .calender {
+    width: 15rem;
+    height: 10rem;
     background: #fff;
     display: flex;
     align-items: top;
     border-radius: 10px;
     margin-left: 10px;
     margin-top: 10px;
-}
+  }
 
-.left, .right{
+  .left,
+  .right {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    flex-direction: column;   
-}
+    flex-direction: column;
+  }
 
-.left p,.right p {
-    font-family: 'Comforter', cursive;
-}
+  .left p,
+  .right p {
+    font-family: "Comforter", cursive;
+  }
 
-.left{
+  .left {
     width: 50%;
     background: #fff;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
-}
+  }
 
-.right{
+  .right {
     width: 50%;
-    background: #A5D7E8;
+    background: #a5d7e8;
     color: #fff;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     color: violet;
-}
-#date{
-    font-size: 100px;
-    line-height: 90px;
-}
-
-header{
+  }
+  .abt-sec {
+    position: absolute;
     display: flex;
-    justify-content: space-between;
-    background-color: #84A7A1;
-    z-index: 10;
-}
-
-
-.main{
-    font-family: 'Cairo Play', sans-serif;  
-    font-size: xx-large;
-    margin-left: 10px;
-}
-
-.logo{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%) scale(0.5);
-    filter: drop-shadow(5px 5px 10px #000);
-}
-nav{
-    margin: 10px;
-    background: #fff;
-    border-radius: 50px;
-    padding: 10px;
-    
-}
-nav ul li{
-    list-style: none;
-    padding: 0px 20px;
-    font-size: 18px;
-    font-weight: 500;
-    color: #777;
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    z-index: 2;
-    transition: color 0.5s;
-}
-
-nav ul li::after{
-    content: '';
-    background: #1F6E8C;
-    width: 100%;
-    height: 100%; 
-    border-radius: 30px;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    opacity: 0;
-    transition: top 0.5s, opacity 0.5s;
-   
-}
-
-nav ul li:hover::after{
-    top: 50%;
-    opacity: 1; 
-}
-
-a {
-    color :#000 ;
-    text-decoration: none;
-}
-
-a:hover{
-    color: white;
-}
-
-.container{
-    background-color: #1F6E8C;
-   z-index: 5;
-}
-.slide {
-    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
     height: 100vh;
-    align-items: center;
-    justify-content: center;
-}
-.tools{
-    color: #000;
-    font-family: 'Gasoek One', sans-serif;
-    font-weight: 10;
-    margin-left: 10px;
-}
-.four {
-    margin-right: 15px;
-    margin-top: 10px;
-    font-size: 1rem;
-    color: black;
-    font-family: 'Cedarville Cursive', cursive;
-}
-
-.abt-sec{
-    display: grid;
-}
-.images{
-    width: 45%;
-    height: 80%;
-    position: absolute;
-    left: 100px;
-}
-.images img{    
-    position: absolute;
-    left: 30%;
-    right:70%;
-    transform: translate(-50%,5%);
-    transition: right 1s, left 1s;
-}
-.images:hover .india-map{
-    right:75%;
-}
-.india-map{
-    height: 100%;
-}
-.my-img{
-    height: 80%;
-    top: 100px;
-}
-.images:hover .my-img{
-    left: 22%;
-}
-
-.welcome{
-    position: absolute;
-    display: grid;
+    width: 100vw;
+  }
+  .images{
+    display: block;
+    height: 100vh;
+    width: 100vw;
     place-items: center;
-    width: 40%;    
-    transform: translate(100%,50%);
-}
-h1 #first-name{
-    font-weight: 10;
-    color: chartreuse;
-    font-family: 'Gasoek One', sans-serif;
-}
-h1 #last-name{
-    font-family: 'Comforter', cursive;
-    color: #fff;
-}
-h1 #Hi{
-    color: #fff;
-}
-h1 #comma{
-    color:brown;
-}
-p[draggable="juet"]{
-    color: #fff;
-    line-height: 1.6;
-    font-family: 'Comforter', cursive;
-}
-p[draggable="Montserrat"]{
-    font-family: 'Montserrat', cursive;
-    text-align: center;
-    line-height: 1.6;
-    font-style: normal;
-}
+  }
+  .images img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: right 1s, left 1s;
+  }
 
-/* Screen Response */
-@media ( width <= 600px) {
-    .logo{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%) scale(0.3);
-        filter: drop-shadow(5px 5px 10px #000);
-    }
-    .calender-box{
-        width: 100%;
-        height: 80vh;
-        display: flex;
-        align-items: top;
-        justify-content: left;
-    }
-    .calender{
-        width: 15rem;
-        height: 10rem;
-        background: #fff;
-        display: flex;
-        align-items: top;
-        border-radius: 10px;
-        margin-left: 10px;
-        margin-top: 10px;
-    }
-    
-    .left, .right{
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 2rem;
-        flex-direction: column;   
-    }
-    
-    .left p,.right p {
-        font-family: 'Comforter', cursive;
-    }
-    
-    .left{
-        width: 50%;
-        background: #fff;
-        border-bottom-left-radius: 10px;
-        border-top-left-radius: 10px;
-    }
-    
-    .right{
-        width: 50%;
-        background: #A5D7E8;
-        color: #fff;
-        border-bottom-right-radius: 10px;
-        border-top-right-radius: 10px;
-        color: violet;
-    }
-    .abt-sec{
-        display:block;
-        justify-content: center;
-        align-items: stretch;
-    }
-    .images img{    
-        position: absolute;
-        align-items: stretch;
-        transition: right 1s, left 1s;
-    }
-    .welcome{
-        position: absolute;
-        display: block;
-        place-items: center;
-        width: 100%;    
-        transform: translate(50%,50%);
-    }
-   
+  .india-map {
+    height: 100%;
+  }
+  .my-img {
+    height: 80%;
+  }
+ 
+  .images:hover .my-img {
+    left: 35%;
+  }
+  
+  .welcome { 
+    position: absolute;
+    place-items: center;
+    justify-content: center;
+    font-size:medium;
+    width: 90%; 
+    height: 100vh;
+    right: 320px;
+    bottom: -500px;
+  }
 }
-@media (1800px > width >= 1200px){
-    
+@media (1800px > width >= 1200px) {
 }
