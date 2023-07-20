@@ -70,10 +70,6 @@ header{
     font-size: xx-large;
     margin-left: 10px;
 }
-/* .sticky{
-    position: sticky;
-    top: 0;
-} */
 
 .logo{
     position: absolute;
@@ -100,7 +96,6 @@ nav ul li{
     position: relative;
     z-index: 2;
     transition: color 0.5s;
-  
 }
 
 nav ul li::after{
@@ -156,6 +151,61 @@ a:hover{
     color: black;
     font-family: 'Cedarville Cursive', cursive;
 }
+
+.abt-sec{
+    display: grid;
+}
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    left: 100px;
+}
+.images img{
+    
+    position: absolute;
+    left: 30%;
+    right:70%;
+    transform: translate(-50%,5%);
+    transition: right 1s, left 1s;
+}
+.images:hover .india-map{
+    right:75%;
+}
+.india-map{
+    height: 100%;
+}
+.my-img{
+    height: 80%;
+    top: 100px;
+}
+.images:hover .my-img{
+    left: 22%;
+}
+
+.welcome{
+    position: absolute;
+    display: block;
+    place-items: center;
+    width: 40%;    
+    transform: translate(100%,50%);
+}
+h1 #first-name{
+    font-weight: 10;
+    color: chartreuse;
+    font-family: 'Gasoek One', sans-serif;
+}
+h1 #last-name{
+    font-family: 'Comforter', cursive;
+    color: #fff;
+}
+h1 #Hi{
+    color: #fff;
+}
+h1 #comma{
+    color:brown;
+}
+
 
 /* Screen Response */
 @media ( width <= 600px) {
