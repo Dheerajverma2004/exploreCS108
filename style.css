@@ -161,8 +161,7 @@ a:hover{
     position: absolute;
     left: 100px;
 }
-.images img{
-    
+.images img{    
     position: absolute;
     left: 30%;
     right:70%;
@@ -185,7 +184,7 @@ a:hover{
 
 .welcome{
     position: absolute;
-    display: block;
+    display: grid;
     place-items: center;
     width: 40%;    
     transform: translate(100%,50%);
@@ -205,7 +204,17 @@ h1 #Hi{
 h1 #comma{
     color:brown;
 }
-
+p[draggable="juet"]{
+    color: #fff;
+    line-height: 1.6;
+    font-family: 'Comforter', cursive;
+}
+p[draggable="Montserrat"]{
+    font-family: 'Montserrat', cursive;
+    text-align: center;
+    line-height: 1.6;
+    font-style: normal;
+}
 
 /* Screen Response */
 @media ( width <= 600px) {
@@ -262,15 +271,25 @@ h1 #comma{
         border-top-right-radius: 10px;
         color: violet;
     }
+    .abt-sec{
+        display:block;
+        justify-content: center;
+        align-items: stretch;
+    }
+    .images img{    
+        position: absolute;
+        align-items: stretch;
+        transition: right 1s, left 1s;
+    }
+    .welcome{
+        position: absolute;
+        display: block;
+        place-items: center;
+        width: 100%;    
+        transform: translate(50%,50%);
+    }
+   
 }
-
-@media ( width <= 768px) {
-
-}
-
-@media ( width <= 992px) {
-
-}
-@media ( width <= 1200px) {
-
+@media (1800px > width >= 1200px){
+    
 }
