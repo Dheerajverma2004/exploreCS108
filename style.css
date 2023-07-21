@@ -59,11 +59,9 @@
   line-height: 90px;
 }
 
-header {
+header{
   display: flex;
-  justify-content: space-between;
-  background-color: #84a7a1;
-  z-index: 10;
+  justify-content: space-evenly;  
 }
 
 .main {
@@ -151,6 +149,10 @@ a:hover {
   font-family: "Cedarville Cursive", cursive;
 }
 
+/*... AboutMe Tab ...*/
+.AboutMe{
+    color: #fff;
+}
 .abt-sec {
   position: absolute;
   display: flex;
@@ -174,17 +176,17 @@ a:hover {
 }
 .my-img {
   height: 80%;
-  top: 100px;
+  top: 130px;
 }
 .images:hover .my-img {
   left: 25%;
-}
+}  
 .welcome {
   position: fixed;
   display: grid;
   place-items: center;
-  width: 50%;
-  transform: translate(100%, 30%);
+  width: 30%;
+  transform: translate(170%, 30%);
 }
 h1 #first-name {
   font-weight: 10;
@@ -216,6 +218,7 @@ p[draggable="Montserrat"] {
 
 /* Screen Response */
 @media (width <= 600px) {
+   
   .logo {
     position: absolute;
     top: 50%;
