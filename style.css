@@ -117,7 +117,8 @@ nav ul li:hover::after {
 }
 
 a {
-  color: #000;
+  color: black;
+  font-family:Georgia, 'Times New Roman', Times, serif;
   text-decoration: none;
 }
 
@@ -136,7 +137,7 @@ a:hover {
   justify-content: center;
 }
 .tools {
-  color: #000;
+  color: yellowgreen;
   font-family: "Gasoek One", sans-serif;
   font-weight: 10;
   margin-left: 10px;
@@ -145,7 +146,7 @@ a:hover {
   margin-right: 15px;
   margin-top: 10px;
   font-size: 1rem;
-  color: black;
+  color: yellow;
   font-family: "Cedarville Cursive", cursive;
 }
 
@@ -210,6 +211,34 @@ p[draggable="Montserrat"] {
   text-align: center;
   line-height: 1.6;
   font-style: normal;
+}
+.links{
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  top: 10%;
+  row-gap: 10px;
+}
+.l1{
+  width: 90%;
+  height: 55px;  
+  background-color: #a5d7e8;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  text-align:center;
+  font-size: 2.5em;
+  font-weight: bold;
+  filter: drop-shadow(5px 5px 10px #000);
+}
+#lkimg{
+  position: relative;
+  top: 5px;
+  height: 40px;
+  width: 40px;
 }
 
 /* Screen Response */
