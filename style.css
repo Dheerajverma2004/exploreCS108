@@ -63,6 +63,10 @@ header{
   display: flex;
   justify-content: space-evenly;  
 }
+#main_header{
+  display: flex;
+  justify-content: space-between; 
+}
 
 .main {
   font-family: "Cairo Play", sans-serif;
