@@ -146,13 +146,6 @@ a:hover {
   font-weight: 10;
   margin-left: 10px;
 }
-.four {
-  margin-right: 15px;
-  margin-top: 10px;
-  font-size: 1rem;
-  color: yellow;
-  font-family: "Cedarville Cursive", cursive;
-}
 
 /*... AboutMe Tab ...*/
 .AboutMe{
@@ -245,7 +238,7 @@ p[draggable="Montserrat"] {
   width: 40px;
 }
 
-/* Screen Response */
+/* Screen Response ........................................................................................*/
 @media (width <= 600px) {
    
   .logo{
@@ -338,6 +331,4 @@ p[draggable="Montserrat"] {
     right: 650px;
     bottom: -460px;
   }
-}
-@media (1800px > width >= 1200px) {
 }
