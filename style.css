@@ -352,4 +352,7 @@ p[draggable="Montserrat"] {
     filter: drop-shadow(5px 5px 10px #000);
     left: 40px;
   }
+  .l1{
+    font-size: 1.5em;
+  }
 }
