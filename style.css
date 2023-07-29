@@ -147,10 +147,14 @@ a:hover {
   margin-left: 10px;
 }
 
-/*... AboutMe Tab ...*/
+/*... AboutMe Tab ..........................................................................................*/
+#sub_header{
+  display: grid;
+}
 .AboutMe{
+  position: relative;
     color: #fff;
-    text-align: center;
+    align-items: center;
 }
 .images {
   width: 45%;
@@ -239,8 +243,7 @@ p[draggable="Montserrat"] {
 }
 
 /* Screen Response ........................................................................................*/
-@media (width <= 600px) {
-   
+@media (width <= 600px) {  
   .logo{
     position: absolute;
     top: 50%;
@@ -330,5 +333,23 @@ p[draggable="Montserrat"] {
     width: 100%; 
     right: 650px;
     bottom: -460px;
+  }
+  #otherProjects{
+    position: relative; 
+    width: 100%; 
+    bottom: -700px;
+  }
+  .l2{
+    position: relative;
+    width: 90%;
+    height: 55px;  
+    background-color: #a5d7e8;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-align:center;
+    font-size: 1.5em;
+    font-weight: bold;
+    filter: drop-shadow(5px 5px 10px #000);
+    left: 40px;
   }
 }
