@@ -237,7 +237,7 @@ p[draggable="Montserrat"] {
   flex-direction: column;
   justify-content: center;
   align-items:center;
-  top: 10%;
+  top: 5%;
   row-gap: 10px;
 }
 .l1, .l2{
