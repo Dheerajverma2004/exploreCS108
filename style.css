@@ -217,6 +217,9 @@ h1 #Hi {
 h1 #comma {
   color: brown;
 }
+#sym{
+  color: yellow;
+}
 p[draggable="juet"] {
   color: #fff;
   font-style: italic;
